@@ -14,3 +14,12 @@ object p1 {
 	}
 
 }
+
+/*
+better:
+	def SumDivisibleBy(n) = {
+		val p = (limit/n).toInt
+		(1 + p) * p / 2 * n
+	}
+	SumDivisibleBy(3) + SumDivisibleBy(5) - SumDivisibleBy(15)
+*/
