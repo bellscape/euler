@@ -1,17 +1,11 @@
-*.class
-*.log
 
-# sbt specific
-.cache
-.history
-.lib/
-dist/*
+# for os
+.DS_Store
+Thumbs.db
+
+# for sbt/idea
+.idea/
 target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+project/
+src/main/scala/local
 
-# Scala-IDE specific
-.scala_dependencies
-.worksheet
