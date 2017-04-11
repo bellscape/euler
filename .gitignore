@@ -9,3 +9,6 @@ target/
 project/
 src/main/scala/local
 
+# for data
+data/
+
