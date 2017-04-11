@@ -8,7 +8,7 @@ object p21 {
 		val max_divisor = Math.sqrt(n).toInt
 		(1 to max_divisor).flatMap { i =>
 			if (n % i == 0) {
-				if (i == 1 || i == max_divisor) {
+				if (i == 1 || (i == max_divisor && n / i == max_divisor)) {
 					Seq(i)
 				} else {
 					Seq(i, n / i)

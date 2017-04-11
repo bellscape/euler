@@ -7,7 +7,7 @@ object p14 {
 	val cache: mutable.HashMap[Long, Int] = mutable.HashMap.empty
 	cache(1) = 1
 
-	// Int => overflow => java.lang.StackOverflowError
+	// n:Int => int overflow => java.lang.StackOverflowError
 	def f(n: Long): Int = {
 		cache.getOrElseUpdate(n, {
 			if (n % 2 == 0) 1 + f(n / 2)
