@@ -2,7 +2,7 @@ package page_31
 
 object p35 {
 
-	val ceils: Array[Int] = {
+	val ceilings: Array[Int] = {
 		def tail(last: Int): Stream[Int] = last #:: tail(last * 10)
 		tail(1).take(7).toArray
 	}
@@ -10,7 +10,7 @@ object p35 {
 	def is_circular(prime: Int): Boolean = {
 		import p34.width
 		val w = width(prime)
-		check_circular(prime, ceils(w), w - 1)
+		check_circular(prime, ceilings(w), w - 1)
 	}
 	private def check_circular(n: Int, ceil: Int, left: Int): Boolean = {
 		if (left <= 0) {
