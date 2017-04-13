@@ -8,8 +8,8 @@ object p5 {
 
 	def f(max: Int): Int = {
 		(1 to max).foldLeft(1) { case (product, i) =>
-			val shared = gcd(product, i)
-			product * (i / shared)
+			val factor = gcd(product, i)
+			product * (i / factor)
 		}
 	}
 

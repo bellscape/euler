@@ -1,4 +1,4 @@
-package page_1
+package page_11
 
 object p12 {
 
@@ -11,8 +11,8 @@ object p12 {
 		val max_divisor = Math.sqrt(n).toInt
 		val is_square = max_divisor * max_divisor == n
 
-		val small_divisor_count = (1 to max_divisor).count(n % _ == 0)
-		small_divisor_count * 2 - (if (is_square) 1 else 0)
+		val small_divisors_count = (1 to max_divisor).count(n % _ == 0)
+		small_divisors_count * 2 - (if (is_square) 1 else 0)
 	}
 
 	def main(args: Array[String]): Unit = {
@@ -24,6 +24,6 @@ object p12 {
 
 /*
 better:
-	N = p1^a1 * p2^a2 * ... * pn^an
-	count_divisors(N) = (a1+1)*(a2+1)*...*(an+1)
- */
+	N = p1^a1 * p2^a2 * ... * pn^an // 因式分解
+	count_divisors(N) = (a1+1)*(a2+1)*...*(an+1) // 约数数量=挑选素数组合的数量
+*/
