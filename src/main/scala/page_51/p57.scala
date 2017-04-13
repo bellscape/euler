@@ -2,7 +2,7 @@ package page_51
 
 object p57 {
 
-	// 增长很快
+	// 增长很快，int很快就不够用了
 	// step 17 = 3880899/2744210
 	// step 18 = 9369319/6625109
 	type Fraction = (BigInt, BigInt)
